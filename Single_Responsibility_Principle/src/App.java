@@ -2,7 +2,17 @@ import java.sql.Date;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        /*
+      
+        Employee pers1 = new Employee("Anna", new Date(103, 05, 07), 250); //
+        System.out.println(pers1.getDob()); // интересно, когда создавали такой конструктор в Date, не планировали, что
+                                            // после 2000 года будет еще кто-то жить?
+        CalculateNetSalary pers1Calc = new CalculateNetSalary(pers1.getBaseSalary());
+        int salary = pers1Calc.calculateNetSalary();
+       
+        System.out.println(salary);
+    }
+}
+  /*
          * 1) Переписать код в соответствии с Single Responsibility Principle:
          * public class Employee {
          * private String name;
@@ -25,12 +35,3 @@ public class App {
          * Подсказка: вынесите метод calculateNetSalary() в отдельный класс
          */
 
-        Employee pers1 = new Employee("Anna", new Date(103, 05, 07), 250); //
-        System.out.println(pers1.getDob()); // интересно, когда создавали такой конструктор в Date, не планировали, что
-                                            // после 2000 года будет еще кто-то жить?
-        CalculateNetSalary pers1Calc = new CalculateNetSalary(pers1.getBaseSalary());
-        int salary = pers1Calc.calculateNetSalary();
-       
-        System.out.println(salary);
-    }
-}
