@@ -13,6 +13,10 @@ public class Employee {
    }
 
 
+   public Employee(String name2, java.sql.Date dob2, int baseSalary2) {
+   }
+
+
    public String getEmpInfo() {
       return "name - " + name + " , dob - " + dob.toString();
    }
