@@ -11,7 +11,7 @@ public class App {
 
         Vehicle v1 = new Bus(110);
         System.out.println(v1.calculateAllowedSpeed(v1));
-        System.out.println(v1.maxSpeed);
+        System.out.println(v1.maxSpeed); 
 
         /*
          * 2) Переписать код SpeedCalculation в соответствии с Open-Closed Principle:
