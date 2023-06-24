@@ -11,6 +11,16 @@ public class Circle implements iCalculateTheArea{
    public double area() {
       return 2 * 3.14 * radius;
    }
+
+
+   public int getRadius() {
+      return radius;
+   }
+
+
+   public void setRadius(int radius) {
+      this.radius = radius;
+   }
    
 
 }

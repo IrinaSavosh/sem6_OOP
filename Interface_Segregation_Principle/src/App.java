@@ -1,6 +1,6 @@
 public class App {
     public static void main(String[] args) throws Exception {
-
+        // Четвертый принцип
         Cube cube = new Cube(5);
         System.out.println(cube.area());
         System.out.println(cube.volume());

@@ -1,4 +1,4 @@
-public class Cube implements iCalculateTheArea {
+public class Cube implements iCalculateTheArea, iCalculateTheVolume {
    private int edge;
 
    public Cube(int edge) {
@@ -12,8 +12,8 @@ public class Cube implements iCalculateTheArea {
    public void setEdge(int edge) {
       this.edge = edge;
    }
-
-   public double volume() {
+   @Override
+   public int volume() {
       return edge * edge * edge;
    }
 
